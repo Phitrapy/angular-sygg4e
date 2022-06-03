@@ -1,0 +1,27 @@
+body {
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  margin: 0;
+  padding: 30px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.menu-layout {
+  display: flex;
+  min-width: 20em;
+}
+
+.menu-zone {
+  width: 50%;
+  height: 5em;
+  border: thin solid black;
+  border-radius: 1em;
+}
+
+.panel-1 {
+  width: 50em;
+  height: 5em;
+}

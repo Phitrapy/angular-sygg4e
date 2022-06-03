@@ -1,0 +1,21 @@
+<button type="button" [matMenuTriggerFor]="settingsMenu">Settings</button>
+<button type="button" disabled [matMenuTriggerFor]="settingsMenu">
+  Disabled menu
+</button>
+
+<mat-menu #settingsMenu>
+  <div class="menu-layout" (click)="$event.stopPropagation()">
+    <div class="menu-zone">zone 1</div>
+    <div class="menu-zone">
+      zone 2
+      <button>Un bouton</button>
+      <input />
+      <input [matDatepicker]="picker" />
+      <mat-datepicker #picker></mat-datepicker>
+    </div>
+  </div>
+</mat-menu>
+
+<!-- Copyright 2022 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->
