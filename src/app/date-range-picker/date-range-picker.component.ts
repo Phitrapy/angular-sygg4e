@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   templateUrl: 'date-range-picker.component.html',
   styleUrls: ['date-range-picker.component.scss'],
 })
-export class DateRangePickerComponent {}
+export class DateRangePickerComponent<D> {}
 
 /**  Copyright 2022 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that

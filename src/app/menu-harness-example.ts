@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 
 /**
  * @title Testing with MatMenuHarness
@@ -7,8 +8,12 @@ import {Component} from '@angular/core';
   selector: 'menu-harness-example',
   templateUrl: 'menu-harness-example.html',
 })
-export class MenuHarnessExample {}
-
+export class MenuHarnessExample {
+  range = new FormGroup({
+    start: new FormControl<Date | null>(null),
+    end: new FormControl<Date | null>(null),
+  });
+}
 
 /**  Copyright 2022 Google LLC. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
