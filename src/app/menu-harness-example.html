@@ -3,15 +3,16 @@
   Disabled menu
 </button>
 
-<mat-menu #settingsMenu>
+<mat-menu #settingsMenu class="custom-menu">
   <div class="menu-layout" (click)="$event.stopPropagation()">
-    <div class="menu-zone">zone 1</div>
     <div class="menu-zone">
-      zone 2
-      <button>Un bouton</button>
-      <input />
-      <input [matDatepicker]="picker" />
-      <mat-datepicker #picker></mat-datepicker>
+      <button mat-button>Le mois courant</button>
+      <button mat-button>Le mois dernier</button>
+      <button mat-button>6 derniers mois</button>
+      <button mat-button>Personnalisé</button>
+    </div>
+    <div class="menu-zone">
+      <mat-calendar></mat-calendar>
     </div>
   </div>
 </mat-menu>
